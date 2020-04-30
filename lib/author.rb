@@ -28,7 +28,7 @@ class Author
     post.author = self          # author by telling the post that it belongs to that author
   end
 
-  def add_post_by_title(post_title)  # takes in an argument of a post title, 
+  def add_post_by_title(post_title)  # takes in an argument of a post title,
     author = Post.new(post_title)    # creates a new post with it and associates the post and author
     add_post(author)
   end
@@ -37,7 +37,7 @@ class Author
     Post.all.count
   end
 
-  
+
 
 
 
