@@ -18,14 +18,14 @@ class Song
 
   attr_accessor :name, :artist
 
-  @@all = []
+  @@all = []              # @@all - is a class variable set to an array
 
   def initialize(name)    # #new - is initialized with an argument of a name
     @name = name          #      - pushes new instances into a class variable called @@all upon initialization
     @@all << self
   end
 
-  def self.all
+  def self.all            # @@all - is a class variable set to an array
     @@all
   end
 
