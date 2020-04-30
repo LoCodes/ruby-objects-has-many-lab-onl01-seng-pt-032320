@@ -30,7 +30,7 @@ class Post
 
   def author_name
     author.name unless author.nil?      #knows the name of its author
-  end                                             # returns nil if the post does not have an author
+  end                                   # returns nil if the post does not have an author
 
 
 
