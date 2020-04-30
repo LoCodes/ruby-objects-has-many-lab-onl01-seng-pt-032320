@@ -29,10 +29,11 @@ class Post
   end
 
   def author_name
-    if author.name            #knows the name of its author
-      true                    # returns nil if the post does not have an author
-    else
-      nil
-    end 
-  end
+    author.name if not nil         #knows the name of its author
+  end                     # returns nil if the post does not have an author
+
+
+
+
+
 end
