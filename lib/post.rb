@@ -33,5 +33,6 @@ class Post
       true                    # returns nil if the post does not have an author
     else
       nil
+    end 
   end
 end
