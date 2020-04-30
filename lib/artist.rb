@@ -11,6 +11,7 @@
 #     takes in an argument of a song name, creates a new song with it and associates the song and artist (FAILED - 5)
 #   .song_count
 #     is a class method that returns the total number of songs associated to all existing artists (FAILED - 6)
+require 'pry'
 
 class Artist
   attr_accessor :name, :songs  # has an attr_accessor for name - #songs - has many songs
@@ -34,5 +35,6 @@ class Artist
 
   def self.song_count # .song_count - is a class method that returns the total number of songs associated to all existing artists
     Song.all.count #{|song| song.artist}
+    binding.pry
   end
 end
