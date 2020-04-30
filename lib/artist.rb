@@ -13,7 +13,7 @@
 #     is a class method that returns the total number of songs associated to all existing artists (FAILED - 6)
 
 class Artist
-  attr_accessor :name, :songs  # has an attr_accessor for name - #songs - has many songs 
+  attr_accessor :name, :songs  # has an attr_accessor for name - #songs - has many songs
 
   def initialize(name)  #  is initialized with a name
     @name = name
