@@ -33,4 +33,8 @@ class Song
     @artist
   end
 
+  def artist_name
+    artist.name unless artist.name.nil?
+  end
+
 end
