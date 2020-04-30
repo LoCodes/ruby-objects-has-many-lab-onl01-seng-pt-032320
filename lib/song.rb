@@ -20,8 +20,8 @@ class Song
 
   @@all = []
 
-  def initialize(name)
-    @name = name
+  def initialize(name)    # #new - is initialized with an argument of a name
+    @name = name          #      - pushes new instances into a class variable called @@all upon initialization
     @@all << self
   end
 
